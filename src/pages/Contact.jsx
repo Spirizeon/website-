@@ -181,9 +181,9 @@ export default function Contact() {
                   ].map((service) => (
                     <label key={service} className="relative group cursor-pointer">
                       <input type="checkbox" className="peer sr-only" />
-                      <div className="flex items-center gap-3 px-5 py-4 bg-white/[0.03] border border-white/10 rounded-2xl text-sm text-scale-text-secondary transition-all peer-checked:border-scale-accent-purple peer-checked:bg-scale-accent-purple/5 group-hover:bg-white/[0.05]">
-                        <div className="w-4 h-4 rounded border border-white/20 flex items-center justify-center peer-checked:bg-scale-accent-purple peer-checked:border-scale-accent-purple">
-                          <CheckCircle className="w-3 h-3 text-white hidden peer-checked:block" />
+                      <div className="flex items-center gap-3 px-5 py-4 bg-white/[0.03] border border-white/10 rounded-2xl text-sm text-scale-text-secondary transition-all group-has-[:checked]:border-scale-accent-purple group-has-[:checked]:bg-scale-accent-purple/5 group-hover:bg-white/[0.05]">
+                        <div className="w-4 h-4 rounded border border-white/20 flex items-center justify-center group-has-[:checked]:bg-scale-accent-purple group-has-[:checked]:border-scale-accent-purple">
+                          <CheckCircle className="w-3 h-3 text-white hidden group-has-[:checked]:block" />
                         </div>
                         {service}
                       </div>
